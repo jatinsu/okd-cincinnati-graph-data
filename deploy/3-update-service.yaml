@@ -4,7 +4,6 @@ metadata:
   name: example
   namespace: openshift-update-service
 spec:
-  graphDataImage: >-
-    image-registry.openshift-image-registry.svc:5000/openshift-update-service/graph-data:latest
+  graphDataImage: quay.io/rh-ee-jsuri/cincinnati-graph-data:default-build
   releases: quay.io/openshift-release-dev/ocp-release
   replicas: 1

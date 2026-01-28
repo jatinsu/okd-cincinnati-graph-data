@@ -1,3 +1,0 @@
-to: 4.8.12
-from: 4\.7\..*
-# SDN egress IP instability https://bugzilla.redhat.com/show_bug.cgi?id=2008987#c51

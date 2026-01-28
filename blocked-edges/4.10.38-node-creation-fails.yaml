@@ -1,8 +1,0 @@
-to: 4.10.38
-from: .*
-url: https://issues.redhat.com/browse/OCPBUGS-2628
-name: OpenStackNodeCreationFails
-message: |-
-  Adding new nodes to the existing cluster on OpenStack will fail.
-matchingRules:
-- type: Always

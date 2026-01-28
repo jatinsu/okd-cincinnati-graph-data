@@ -1,3 +1,0 @@
-to: 4.9.39
-from: .*
-# OVN networking issue https://bugzilla.redhat.com/show_bug.cgi?id=2098099

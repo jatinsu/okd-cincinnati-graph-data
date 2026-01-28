@@ -1,9 +1,0 @@
-to: 4.13.0-ec.3
-from: 4[.]12[.].*
-url: https://issues.redhat.com/browse/AUTH-351
-name: StrictPodSecurityViolation
-message: |-
-  OCP 4.13 prereleases attempted to enforce PodSecurityViolations, but ended up backing off.  Clusters with violating workloads should either fix their workloads, or avoid updating to 4.13 until that softening lands.
-matchingRules:
-- type: Always
-
