@@ -1,9 +1,9 @@
 apiVersion: updateservice.operator.openshift.io/v1
 kind: UpdateService
 metadata:
-  name: example
+  name: okd 
   namespace: openshift-update-service
 spec:
-  graphDataImage: quay.io/rh-ee-jsuri/cincinnati-graph-data:default-build
-  releases: quay.io/openshift-release-dev/ocp-release
+  graphDataImage: quay.io/rh-ee-jsuri/cincinnati-graph-data:test-for-okd
+  releases: quay.io/okd/scos-release
   replicas: 1

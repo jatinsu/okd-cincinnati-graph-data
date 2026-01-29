@@ -7,8 +7,8 @@ spec:
   source:
     type: Git
     git:
-      uri: https://github.com/openshift/cincinnati-graph-data.git
-      ref: master
+      uri: https://github.com/jatinsu/cincinnati-graph-data/ 
+      ref: test-for-okd
     dockerfile: |
       FROM registry.access.redhat.com/ubi8/ubi:8.1
       WORKDIR /home
