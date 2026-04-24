@@ -1,7 +1,0 @@
-to: 4.20.0-okd-scos.10
-from: ^4[.]19[.][0-9]+(-okd-scos[.][0-9]+)?[+].*$
-url: https://github.com/okd-project/okd/issues/99999
-name: OKDTestUpgradeIssue
-message: "Upgrades may experience issues. This is a test blocked edge."
-matchingRules:
-- type: Always

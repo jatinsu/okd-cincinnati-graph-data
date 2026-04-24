@@ -1,7 +1,0 @@
-to: 4.20.0-okd-scos.5
-from: .*
-url: https://github.com/okd-project/okd/issues/12345
-name: TestBlock
-message: "This is a test blocked edge. Version 4.20.0-okd-scos.5 should not be used for testing purposes."
-matchingRules:
-- type: Always
