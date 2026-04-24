@@ -1,6 +1,6 @@
 to: 4.21.0-okd-scos.8
 from: .*
-url: https://github.com/okd-project/okd/issues/99999
+url:
 name: UpgradeFailure
 message: "4.21.0-okd-scos.8 has failed upgrade jobs"
 matchingRules:
