@@ -1,0 +1,25 @@
+feeder:
+  delay: PT0H
+  filter: 4[.](19|20)[.][0-9]-okd-scos[.].*
+  name: stable
+name: stable-4.20
+versions:
+  - 4.19.0-okd-scos.19
+  - 4.20.0-okd-scos.0
+  - 4.20.0-okd-scos.1
+  - 4.20.0-okd-scos.2
+  - 4.20.0-okd-scos.3
+  - 4.20.0-okd-scos.4
+  - 4.20.0-okd-scos.5
+  - 4.20.0-okd-scos.6
+  - 4.20.0-okd-scos.7
+  - 4.20.0-okd-scos.8
+  - 4.20.0-okd-scos.9
+  - 4.20.0-okd-scos.10
+  - 4.20.0-okd-scos.11
+  - 4.20.0-okd-scos.12
+  - 4.20.0-okd-scos.13
+  - 4.20.0-okd-scos.14
+  - 4.20.0-okd-scos.15
+  - 4.20.0-okd-scos.16
+  - 4.20.0-okd-scos.17
