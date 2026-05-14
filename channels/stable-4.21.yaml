@@ -16,3 +16,5 @@ versions:
   - 4.21.0-okd-scos.8
   - 4.21.0-okd-scos.9
   - 4.21.0-okd-scos.10
+  - 4.21.0-okd-scos.11
+  - 4.22.0-okd-scos.0

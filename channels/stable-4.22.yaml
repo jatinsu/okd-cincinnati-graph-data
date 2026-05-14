@@ -1,0 +1,8 @@
+feeder:
+  delay: PT0H
+  filter: 4[.](21|22)[.][0-9]-okd-scos[.].*
+  name: stable
+name: stable-4.22
+versions:
+  - 4.21.0-okd-scos.11
+  - 4.22.0-okd-scos.0
