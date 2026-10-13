@@ -1,6 +1,7 @@
 to: 4.22.0-okd-scos.6
 fixedIn: 4.22.0-okd-scos.7
 from: .*
+url: https://github.com/okd-project/okd/issues/2361
 name: CriOWatchdogTimeout
 message: "CRI-O 1.36.1 hangs during node shutdown (watchdog timeout), causing full image store wipe on reboot. Clusters on this release cannot create forward upgrade edges. Fixed in scos.7+ (CRI-O 1.36.2)."
 matchingRules:
