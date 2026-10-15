@@ -2,6 +2,7 @@ to: 5.0.0-okd-scos.1
 from: .*
 url: https://github.com/okd-project/okd/issues/2369
 name: SigningKeyVerificationFailure
+fixedIn: 5.0.0-okd-scos.2
 message: "Release payload fails signature verification against the verifier-public-key-redhat keyring. Clusters cannot retrieve this release payload for upgrade."
 matchingRules:
   - type: Always
