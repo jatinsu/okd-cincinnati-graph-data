@@ -1,0 +1,39 @@
+name: validate
+
+# Runs the checks that openshift/cincinnati-graph-data runs through Prow
+# (validate-blocked-edges and the graph-data.rs e2e binary), adapted for OKD.
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  validate-blocked-edges:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: pip install -r hack/requirements.txt
+      - run: ./hack/validate-blocked-edges.py
+
+  graph-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: graph-data.rs
+      - name: Unit tests
+        run: cargo test --locked --manifest-path graph-data.rs/Cargo.toml
+      - name: Build
+        run: cargo build --locked --manifest-path graph-data.rs/Cargo.toml
+      - name: Verify graph data, releases and signatures
+        run: graph-data.rs/target/debug/cincinnati-graph-data
+        env:
+          PUBKEYS_DIR: graph-data.rs/public-keys
+          RUST_LOG: actix_web=error,dkregistry=error
